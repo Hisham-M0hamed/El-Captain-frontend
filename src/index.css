@@ -1,11 +1,22 @@
+:root {
+  --bg-dark: #0c1b33;
+  --primary-accent: #f0a30b;
+  --text-dark: #555555;
+  --text-light: #ffffff;
+  --bg-light-gray: #f8f8f8;
+}
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+}
+html {
+  scroll-behavior: smooth;
 }
