@@ -39,7 +39,7 @@ const Navbar = () => {
             <FaCartShopping />
             <FaCaravan />
           </div>
-          <button>Login</button>
+          <button>sign up</button>
         </div>
       </div>
     </div>
