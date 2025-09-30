@@ -1,4 +1,4 @@
-.container {
+.containerNav {
   display: flex;
   background-color: #0c1b33;
   justify-content: space-between;
@@ -6,6 +6,7 @@
   color: #f6f6f6;
   position: relative;
   padding: 10px 35px;
+  width: 100%;
 }
 .logo {
   display: flex;
@@ -75,3 +76,5 @@ nav li:hover {
   background-color: #f0a30b;
   /* font-weight: 700; */
 }
+
+/* **************************************** */

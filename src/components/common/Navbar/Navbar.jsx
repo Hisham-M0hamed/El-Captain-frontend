@@ -3,9 +3,11 @@ import styles from "./Navbar.module.css";
 import { FaArrowDown } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaravan } from "react-icons/fa";
+import { BsList } from "react-icons/bs";
+
 const Navbar = () => {
   return (
-    <div dir="rtl" className={styles.container}>
+    <div dir="rtl" className={styles.containerNav}>
       <div className={styles.logo}>
         <h1>الكابتن</h1>
 
