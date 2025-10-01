@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 const Login = () => {
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumbers, setPhoneNumbers] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(" Phone Number:", phoneNumber);
+    console.log(" Phone Number:", phoneNumbers);
     console.log(" Password:", password);
 
    
-     fetch("http://localhost:8000/users/login", {
+     fetch("http://localhost:8000/api/v1/users/login", {
        method: "POST",
        headers: { "Content-Type": "application/json" },
-body: JSON.stringify({ phone: phoneNumber, password }),
+body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
      })
        .then((res) => res.json())
        .then((data) => console.log(data))
@@ -36,8 +36,8 @@ body: JSON.stringify({ phone: phoneNumber, password }),
              <input
                 type="text"
                 placeholder="رقم الهاتف"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                value={phoneNumbers}
+                onChange={(e) => setPhoneNumbers(e.target.value)}
                 required
               />
             </div>
