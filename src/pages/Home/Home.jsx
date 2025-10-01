@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../../components/common/Navbar/Navbar";
-import Footer from "../../components/common/Footer/Footer";
-import styles from "./Home.module.css";
+
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <Navbar />
-      <Footer />
+    <div style={{ padding: "20px" }}>
+      <h1>🏠 أهلاً بك في الكابتن</h1>
+      <p>منصة متكاملة لإدارة خدمات النقل والشحن</p>
     </div>
   );
 };

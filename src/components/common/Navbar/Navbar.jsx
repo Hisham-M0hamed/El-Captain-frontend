@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaravan } from "react-icons/fa";
 import { BsList } from "react-icons/bs";
-
+import { Link } from "react-router-dom"; 
 const Navbar = () => {
   return (
     <div dir="rtl" className={styles.containerNav}>
@@ -59,8 +59,9 @@ const Navbar = () => {
             <FaCaravan />
           </a>
         </div>
-        <button>تسجيل الدخول</button>
-      </div>
+<Link to="/login">
+          <button>تسجيل الدخول</button>
+        </Link>      </div>
     </div>
   );
 };

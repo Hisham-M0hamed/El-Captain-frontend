@@ -1,11 +1,38 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/common/Navbar/Navbar";
+import Footer from "./components/common/Footer/Footer";
+
+// صفحات
 import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+
+function MainLayout({ children }) {
+  return (
+    <>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+       
+
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
