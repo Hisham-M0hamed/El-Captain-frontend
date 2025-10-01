@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "./Login.css";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("📱 Phone Number:", phoneNumber);
-    console.log("🔑 Password:", password);
+    console.log(" Phone Number:", phoneNumber);
+    console.log(" Password:", password);
 
    
-     fetch("http://localhost:5000/users", {
+     fetch("http://localhost:8000/users/login", {
        method: "POST",
        headers: { "Content-Type": "application/json" },
 body: JSON.stringify({ phone: phoneNumber, password }),
@@ -24,19 +24,17 @@ body: JSON.stringify({ phone: phoneNumber, password }),
   return (
     <div className="auth-container">
       <div className="auth-wrapper">
-        {/* قسم البراند */}
         <div className="auth-branding">
           <div className="logo">الكابتن</div>
           <p>شريكك الاستراتيجي في قطاع النقل. حلول لوجستية متكاملة وموثوقة.</p>
         </div>
 
-        {/* الفورم */}
         <div className="auth-form">
           <h1>مرحباً بعودتك</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
              <input
-                type="tel"
+                type="text"
                 placeholder="رقم الهاتف"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
@@ -66,7 +64,7 @@ body: JSON.stringify({ phone: phoneNumber, password }),
 
           <div className="form-footer">
             <p>
-              ليس لديك حساب؟ <a href="/signup">إنشاء حساب جديد</a>
+  ليس لديك حساب؟ <Link to="/Register">إنشاء حساب جديد</Link>
             </p>
             <p>
               <a href="/">العودة للرئيسية</a>

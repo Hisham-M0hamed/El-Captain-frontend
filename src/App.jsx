@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar/Navbar";
 import Footer from "./components/common/Footer/Footer";
 
-// صفحات
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 
 function MainLayout({ children }) {
   return (
@@ -31,6 +31,7 @@ function App() {
        
 
         <Route path="/login" element={<Login />} />
+        <Route path="/Register" element= {<Register />} />
       </Routes>
     </Router>
   );
