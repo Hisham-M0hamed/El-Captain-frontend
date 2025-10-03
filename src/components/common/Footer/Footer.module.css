@@ -1,16 +1,18 @@
 .footer {
   padding: 18px 60px;
   margin: 40px 0 0;
-  position: fixed;
+  box-sizing: border-box;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
   width: 100%;
-  bottom: 0;
+  /* top: 57%; */
   background-color: #0c1b33;
   color: #f6f6f6;
 }
+
 .footer h1 {
   color: #f0a30b;
   font-size: 45px;

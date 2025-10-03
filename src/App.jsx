@@ -28,10 +28,9 @@ function App() {
             </MainLayout>
           }
         />
-       
 
         <Route path="/login" element={<Login />} />
-        <Route path="/Register" element= {<Register />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 .containerNav {
   display: flex;
-  background-color: #0c1b33;
+  /* background-color: #0c1b33; */
   justify-content: space-between;
   align-items: center;
   color: #f6f6f6;
@@ -40,14 +40,17 @@ ul li {
 }
 .ourCategories li:hover {
   background-color: #f0a30b;
-  font-weight: 700;
+  /* font-weight: 500; */
 }
 nav ul {
   display: flex;
 }
 nav li:hover {
   color: #f0a30b;
-  font-weight: 700;
+  /* font-weight: 700; */
+}
+.containerNav .links {
+  margin: 20px;
 }
 .login {
   display: flex;
@@ -77,4 +80,7 @@ nav li:hover {
   /* font-weight: 700; */
 }
 
+.border {
+  border: 1px solid red;
+}
 /* **************************************** */
