@@ -28,6 +28,7 @@ const Navbarlg = () => {
         >
           الصفحة الرئيسية
         </Typography>
+        {/* <Link to="/services"> */}
         <Typography
           sx={{
             cursor: "pointer",
@@ -37,6 +38,7 @@ const Navbarlg = () => {
         >
           خدمتنا
         </Typography>
+        {/* </Link> */}
         <Typography
           sx={{
             cursor: "pointer",
@@ -66,11 +68,26 @@ const Navbarlg = () => {
         </Typography>
       </Box>
       <Box sx={{ display: "flex", gap: "25px" }}>
-        <Paper sx={{ bgcolor: "#0c1b33", color: "#f6f6f6", marginTop: "2px" }}>
-          <IconButton sx={{ color: "#f6f6f6", mx: "10px" }}>
+        <Paper
+          elevation={0}
+          sx={{ bgcolor: "#0c1b33", color: "#f6f6f6", marginTop: "2px" }}
+        >
+          <IconButton
+            sx={{
+              ":hover": { color: "#f0a30b" },
+              color: "#f6f6f6",
+              mx: "10px",
+            }}
+          >
             <FaCartShopping />
           </IconButton>
-          <IconButton sx={{ color: "#f6f6f6", mx: "10px" }}>
+          <IconButton
+            sx={{
+              color: "#f6f6f6",
+              mx: "10px",
+              ":hover": { color: "#f0a30b" },
+            }}
+          >
             <FaCaravan />
           </IconButton>
         </Paper>
@@ -79,9 +96,10 @@ const Navbarlg = () => {
             sx={{
               padding: "8px 30px",
               color: "#f6f6f6",
-              borderRadius: "15px",
+              borderRadius: "29px",
               border: "1px solid #f0a30b",
               fontSize: "17px",
+              fontWeight: "600",
               width: "160px",
               ":hover": { bgcolor: "#f0a30b" },
             }}
