@@ -19,7 +19,30 @@ const Navbarlg = () => {
           mx: "20px",
         }}
       >
-        <Typography
+        {[
+          { link: "home", text: "الصفحة الرئيسية" },
+          { link: "services", text: "خدمتنا" },
+          { link: "about", text: "من نحن" },
+          { link: "partner", text: "شركائنا" },
+          { link: "contact", text: "اتصل بنا" },
+        ].map((item, idx) => {
+          return (
+            <Box key={idx}>
+              <Link to={item.link} style={{ color: "white" }}>
+                <Typography
+                  sx={{
+                    cursor: "pointer",
+                    fontSize: "20px",
+                    ":hover": { color: "#f0a30b" },
+                  }}
+                >
+                  {item.text}
+                </Typography>
+              </Link>
+            </Box>
+          );
+        })}
+        {/* <Typography
           sx={{
             cursor: "pointer",
             fontSize: "20px",
@@ -28,17 +51,17 @@ const Navbarlg = () => {
         >
           الصفحة الرئيسية
         </Typography>
-        {/* <Link to="/services"> */}
-        <Typography
-          sx={{
-            cursor: "pointer",
-            fontSize: "20px",
-            ":hover": { color: "#f0a30b" },
-          }}
-        >
-          خدمتنا
-        </Typography>
-        {/* </Link> */}
+        <Link to="/services" style={{ color: "white" }}>
+          <Typography
+            sx={{
+              cursor: "pointer",
+              fontSize: "20px",
+              ":hover": { color: "#f0a30b" },
+            }}
+          >
+            خدمتنا
+          </Typography>
+        </Link>
         <Typography
           sx={{
             cursor: "pointer",
@@ -65,7 +88,7 @@ const Navbarlg = () => {
           }}
         >
           اتصل بنا
-        </Typography>
+        </Typography> */}
       </Box>
       <Box sx={{ display: "flex", gap: "25px" }}>
         <Paper

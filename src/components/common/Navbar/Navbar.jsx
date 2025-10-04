@@ -155,11 +155,11 @@ const Navbar = () => {
               <Close onClick={toggleDrawer("top", false)} />
             </IconButton>
             {[
-              { mainText: "الصفحة الرئيسية" },
-              { mainText: " خدمتنا" },
-              { mainText: "من نحن " },
-              { mainText: "شركائنا" },
-              { mainText: "اتصل بنا" },
+              { link: "home", mainText: "الصفحة الرئيسية" },
+              { link: "services", mainText: " خدمتنا" },
+              { link: "about", mainText: "من نحن " },
+              { link: "partner", mainText: "شركائنا" },
+              { link: "contact", mainText: "اتصل بنا" },
             ].map((item, idx) => {
               return (
                 <Box
@@ -169,18 +169,20 @@ const Navbar = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <Typography
-                    key={idx}
-                    sx={{
-                      margin: "12px",
-                      color: "#f6f6f6",
-                      fontWeight: "700",
-                      fontSize: "20",
-                      ":hover": { color: "#f0a30b", cursor: "pointer" },
-                    }}
-                  >
-                    {item.mainText}
-                  </Typography>
+                  <Link to={item.link}>
+                    <Typography
+                      key={idx}
+                      sx={{
+                        margin: "12px",
+                        color: "#f6f6f6",
+                        fontWeight: "700",
+                        fontSize: "20",
+                        ":hover": { color: "#f0a30b", cursor: "pointer" },
+                      }}
+                    >
+                      {item.mainText}
+                    </Typography>
+                  </Link>
                 </Box>
               );
             })}

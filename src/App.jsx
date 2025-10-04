@@ -6,37 +6,44 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Categories from "./pages/services/Categories";
+import Card from "./pages/services/Card";
+import { Box } from "@mui/material";
+import Root from "./Root";
+// function MainLayout() {
+//   return (
+//     <>
+//       <Navbar />
+//       {/* <main>{children}</main> */}
+//       <Home />
+//       <Categories />
 
-function MainLayout() {
-  return (
-    <>
-      <Navbar />
-      {/* <main>{children}</main> */}
-      <Home />
-      <Categories />
-
-      <Footer />
-    </>
-  );
-}
+//       <Footer />
+//     </>
+//   );
+// }
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <Home />
-            </MainLayout>
-          }
-        />
-        {/* <Route path="/services" element={<Categories />} /> */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-      </Routes>
-    </Router>
+    <Box>
+      <Root />
+    </Box>
+    // <Router>
+    //   <Routes>
+    //     <Route
+    //       path="/"
+    //       element={
+    //         <MainLayout>
+    //           <Home />
+    //         </MainLayout>
+    //       }
+    //     />
+    //     <Route path="/card/:id" element={<Card />} />
+
+    //     {/* <Route path="/services" element={<Categories />} /> */}
+    //     <Route path="/login" element={<Login />} />
+    //     <Route path="/Register" element={<Register />} />
+    //   </Routes>
+    // </Router>
   );
 }
 

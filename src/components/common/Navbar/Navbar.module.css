@@ -29,6 +29,7 @@
   top: 35px;
   width: 200px;
   display: none;
+  z-index: 1000;
 }
 .categories:hover .ourCategories {
   display: flex;

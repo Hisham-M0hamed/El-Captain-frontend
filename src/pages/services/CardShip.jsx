@@ -49,7 +49,7 @@ const CardShip = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                width: "350px",
+                width: "320px",
                 height: "450px",
               }}
             >
