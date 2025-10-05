@@ -55,10 +55,8 @@ const Hero = () => {
               للتواصل 01211663322
             </Paper>
             <Button className="link"> ابدا معانا</Button>
-            {/* <IconButton> </IconsButton> */}
-            <IconsButton >
-              <WhatsAppIcon sx={{ fontSize: "40px" }} />
-            </IconButton>
+            
+            
           </Box>
         </Box>
       </Container>

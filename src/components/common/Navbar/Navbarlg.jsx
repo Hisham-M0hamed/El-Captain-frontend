@@ -111,7 +111,9 @@ const Navbarlg = () => {
               ":hover": { color: "#f0a30b" },
             }}
           >
-            <FaCaravan />
+          <link to="/track">
+          <FaCaravan />
+          </link>  
           </IconButton>
         </Paper>
         <Link to="/login">
