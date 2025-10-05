@@ -27,7 +27,7 @@ const CardAll = () => {
         {[
           {
             id: "1",
-            image: "src/images/bulid.webp",
+            image: "/images/bulid.webp",
             text: "مواد بناء",
             desc: "نمتلك الخبرة في التعامل مع الخامات الثقيلة ومواد البناء من المحاجر والمصانع إلى مواقع المشاريع.",
             more: " المزيد",
@@ -35,7 +35,7 @@ const CardAll = () => {
           {
             id: "2",
 
-            image: "src/images/chemical.jpg",
+            image: "/images/chemical.jpg",
             text: "صناعات كيمياوية",
             desc: "  حلول لوجستية متخصصة لنقل المواد الكيماوية مع الالتزام التام بإجراءات الأمان المطلوبة.",
             more: "المزيد",
@@ -43,7 +43,7 @@ const CardAll = () => {
           {
             id: "3",
 
-            image: "src/images/doctor.jpg",
+            image: "/images/doctor.jpg",
             text: "صناعات دوائية ومستلزمات طبية",
             desc: "نقل آمن ومبرد للشحنات الدوائية الحساسة وفقًا لأعلى معايير الجودة والسلامة العالمية.",
             more: "المزيد",
@@ -51,7 +51,7 @@ const CardAll = () => {
           {
             id: "4",
 
-            image: "src/images/engineer.jpg",
+            image: "/images/engineer.jpg",
             text: "صناعات هندسة",
             desc: "  نقدم حلول نقل متخصصة للمنتجات الهندسية التي تتطلب دقة وعناية فائقة في التعامل.",
             more: "المزيد",
@@ -59,7 +59,7 @@ const CardAll = () => {
           {
             id: "5",
 
-            image: "src/images/oil.jpeg",
+            image: "/images/oil.jpeg",
             text: "مواد بترولية وزيوت",
             desc: "  نوفر جميع أنواع المواد البتروليةوالزيوت بأعلى جودة ووفقًا لأعلى معايير السلامة",
             more: "المزيد",
@@ -67,7 +67,7 @@ const CardAll = () => {
           {
             id: "6",
 
-            image: "src/images/stone.jpg",
+            image: "/images/stone.jpg",
             text: "مواد محجرية",
             desc: "متخصصون في توريد المواد المحجرية مثل الرمل والسن والحصى والرخام لمشروعات البناء والبنية التحتية.",
             more: "المزيد",
