@@ -17,7 +17,7 @@ import Services from "./pages/services/Services.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import About from "./pages/About/About.jsx";
 import Partners from "./pages/Partners/Partners.jsx";
-import Track from "./pages/Track-order/Track.jsx";
+// import Track from "./pages/Track-order/Track.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -53,10 +53,10 @@ const routes = createBrowserRouter([
       path:"partner",
       element: <Partners />,
     },
-     {
-      path:"track",
-      element: <Track />,
-    },
+    //  {
+    //   path:"track",
+    //   element: <Track />,
+    // },
       {
         path: "contact",
         element: <Contact />,
