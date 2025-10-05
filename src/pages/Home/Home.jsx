@@ -1,11 +1,16 @@
-import React from "react";
+import { Box } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
+import React from "react";
+import "./Home.css";
+import Hero from "./hero";
+import Categories from "../services/Categories";
 const Home = () => {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>🏠 أهلاً بك في الكابتن</h1>
-      <p>منصة متكاملة لإدارة خدمات النقل والشحن</p>
-    </div>
+    <Box>
+      <Hero />
+      <Categories />
+    </Box>
   );
 };
 
