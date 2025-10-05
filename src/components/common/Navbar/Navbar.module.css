@@ -37,16 +37,23 @@
 ul li {
   padding: 13px 15px;
   border-radius: 5px;
+   color:#f6f6f6;
+
 }
-.ourCategories li:hover {
+/* .ourCategories li:hover {
   background-color: #f0a30b;
   font-weight: 700;
-}
+} */
 nav ul {
   display: flex;
+   color:#f6f6f6;
+
 }
-nav li:hover {
-  color: #f0a30b;
+nav .links {
+ color:#f6f6f6;
+}
+nav .links:hover{
+ color: #f0a30b;
   font-weight: 700;
 }
 .login {
@@ -76,5 +83,9 @@ nav li:hover {
   background-color: #f0a30b;
   /* font-weight: 700; */
 }
+link{
+  text-decoration: none;
+   color:#f6f6f6;
 
+} 
 /* **************************************** */

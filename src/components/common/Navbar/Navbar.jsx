@@ -42,11 +42,11 @@ const Navbar = () => {
       <div>
         <nav>
           <ul>
-            <li>الصفحة الرئيسية</li>
-            <li>خدمتنا</li>
-            <li>من نحن</li>
-            <li>شركائنا</li>
-            <li>اتصل بنا</li>
+            <li> <Link className={styles.links} to="/home">الصفحةالرئيسية</Link></li>
+            <li><Link  className={styles.links} to="/services"> خدمتنا</Link></li>
+            <li><Link className={styles.links} to="/about"> من نحن</Link> </li>
+            <li><Link  className={styles.links} to="/partner"> شركائنا</Link></li>
+            <li><Link className={styles.links} to="/contact">اتصل بنا</Link></li>
           </ul>
         </nav>
       </div>
