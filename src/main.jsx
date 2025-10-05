@@ -46,7 +46,8 @@ const routes = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      },
+      },29
+      
     ],
   },
 ]);

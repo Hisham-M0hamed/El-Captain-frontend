@@ -19,8 +19,9 @@ const CardAll = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          marginBottom: "120px",
-          gap: "20px",
+          marginBottom: "60px",
+          // margin:'2px 50px',
+          // gap: "16px",
         }}
       >
         {[
@@ -82,10 +83,13 @@ const CardAll = () => {
                     position: "relative",
                     textAlign: "center",
                     display: "flex",
+                    // gap:'20px',
+                    margin:'16px 16px',
                     flexDirection: "column",
                     alignItems: "center",
+                    borderRadius:'12px',
                     width: "320px",
-                    height: "470px",
+                    height: "490px",
                   }}
                 >
                   <CardActionArea>
@@ -93,8 +97,8 @@ const CardAll = () => {
                       component="img"
                       height="200"
                       image={item.image}
-                      width="400px"
-                      sx={{ objectFit: "cover", width: "350px" }}
+                      width="320px"
+                      sx={{ objectFit: "cover", width: "320px" }}
                     />
                     <CardContent>
                       <Typography
@@ -116,16 +120,16 @@ const CardAll = () => {
                       sx={{
                         textAlign: "center",
                         backgroundColor: "#0c1b33",
-                        padding: "8px 35px",
+                        padding: "4px 44px",
                         color: "#f6f6f6",
                         borderRadius: "20px",
                         ":hover": { bgcolor: "#f0a30b" },
                         position: "absolute",
-                        margin: "15px 15px",
-                        bottom: "1px",
+                        // margin: "15px 15px",
+                        bottom: "22px",
                         left: "50%",
                         transform: "translate(-50%)",
-                        fontSize: "23px",
+                        fontSize: "22px",
                       }}
                       size="large"
                       color="primary"

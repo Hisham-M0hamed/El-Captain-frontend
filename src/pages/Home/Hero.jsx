@@ -6,6 +6,7 @@ import {
   Divider,
   Paper,
   Typography,
+  IconButton
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
@@ -54,9 +55,10 @@ const Hero = () => {
               للتواصل 01211663322
             </Paper>
             <Button className="link"> ابدا معانا</Button>
-            <Button className="link">
-              <WhatsAppIcon sx={{ fontSize: "40px" }} /> واتساب
-            </Button>
+            {/* <IconButton> </IconsButton> */}
+            <IconsButton >
+              <WhatsAppIcon sx={{ fontSize: "40px" }} />
+            </IconButton>
           </Box>
         </Box>
       </Container>

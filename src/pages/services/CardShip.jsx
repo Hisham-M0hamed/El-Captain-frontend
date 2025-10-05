@@ -16,8 +16,8 @@ const CardShip = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          marginTop: "100px",
-          gap: "20px",
+          marginTop: "20px",
+          // gap: "20px",
         }}
       >
         {[
@@ -50,7 +50,8 @@ const CardShip = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 width: "320px",
-                height: "450px",
+                margin:'16px',
+                height: "490px",
               }}
             >
               <CardActionArea>
@@ -58,8 +59,8 @@ const CardShip = () => {
                   component="img"
                   height="200"
                   image={item.image}
-                  width="400px"
-                  sx={{ objectFit: "cover", width: "350px" }}
+                  width="320px"
+                  sx={{ objectFit: "cover", width: "320px" }}
                   alt="green iguana"
                 />
                 <CardContent>
@@ -81,13 +82,13 @@ const CardShip = () => {
                   sx={{
                     textAlign: "center",
                     backgroundColor: "#0c1b33",
-                    padding: "8px 35px",
+                    padding: "4px 44px",
                     color: "#f6f6f6",
                     borderRadius: "20px",
                     ":hover": { bgcolor: "#f0a30b" },
                     position: "absolute",
-                    margin: "15px 15px",
-                    bottom: "1px",
+                    // margin: "15px 15px",
+                    bottom: "16px",
                     left: "50%",
                     transform: "translate(-50%)",
                     fontSize: "23px",
