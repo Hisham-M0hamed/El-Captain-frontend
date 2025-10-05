@@ -55,8 +55,15 @@ const Hero = () => {
               للتواصل 01211663322
             </Paper>
             <Button className="link"> ابدا معانا</Button>
+<<<<<<< HEAD
             
             
+=======
+            {/* <IconButton> </IconsButton> */}
+            <IconButton >
+              <WhatsAppIcon sx={{ fontSize: "40px" }} />
+            </IconButton>
+>>>>>>> 848f22d (Updating Docker file and nginx.conf file)
           </Box>
         </Box>
       </Container>
