@@ -11,10 +11,10 @@ const Login = () => {
     console.log(" Password:", password);
 
    
-     fetch("http://localhost:8000/api/v1/users/login", {
+     fetch("/api/v1/users/login", {
        method: "POST",
        headers: { "Content-Type": "application/json" },
-body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
+       body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
      })
        .then((res) => res.json())
        .then((data) => console.log(data))
