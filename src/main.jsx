@@ -15,6 +15,7 @@ import PageNotFound from "./pages/PageNotFound.jsx";
 import Categories from "./pages/services/Categories.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Services from "./pages/services/Services.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const routes = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

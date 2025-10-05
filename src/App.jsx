@@ -24,28 +24,28 @@ import Root from "./Root";
 
 function App() {
   return (
-<<<<<<< HEAD
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <Home />
-            </MainLayout>
-          }
-        />
+    // <<<<<<< HEAD
+    //     <Router>
+    //       <Routes>
+    //         <Route
+    //           path="/"
+    //           element={
+    //             <MainLayout>
+    //               <Home />
+    //             </MainLayout>
+    //           }
+    //         />
 
-        <Route
-          path="/contact"
-          element={
-            <MainLayout>
-              <Contact />
-            </MainLayout>
-          }
-        />
-       
-=======
+    //         <Route
+    //           path="/contact"
+    //           element={
+    //             <MainLayout>
+    //               <Contact />
+    //             </MainLayout>
+    //           }
+    //         />
+
+    // =======
     <Box>
       <Root />
     </Box>
@@ -60,7 +60,7 @@ function App() {
     //       }
     //     />
     //     <Route path="/card/:id" element={<Card />} />
->>>>>>> 12cd484a0ec132d89040e45b3d290e208741e282
+    // >>>>>>> 12cd484a0ec132d89040e45b3d290e208741e282
 
     //     {/* <Route path="/services" element={<Categories />} /> */}
     //     <Route path="/login" element={<Login />} />
