@@ -3,7 +3,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import React from "react";
 import "./Home.css";
-import Hero from "./hero";
+import Hero from "./Hero";
 import Categories from "../services/Categories";
 import WhatsAppButton from "../WhatsAppButton";
 const Home = () => {

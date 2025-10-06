@@ -91,7 +91,7 @@ const Footer = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              alignItems: "center",
+              // alignItems: "center",
               gap: "30px",
             }}
           >

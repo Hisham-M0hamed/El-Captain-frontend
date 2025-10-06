@@ -12,10 +12,12 @@ import {
 import Root from "./Root.jsx";
 import Home from "./pages/Home/Home.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
-import Categories from "./pages/services/Categories.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Services from "./pages/services/Services.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import About from "./pages/About/About.jsx";
+import Partners from "./pages/Partners/Partners.jsx";
+// import Track from "./pages/Track-order/Track.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -43,10 +45,23 @@ const routes = createBrowserRouter([
         path: "login",
         element: <Login />,
       },
+    {
+      path:"about",
+      element: <About />,
+    },
+    {
+      path:"partner",
+      element: <Partners />,
+    },
+    //  {
+    //   path:"track",
+    //   element: <Track />,
+    // },
       {
         path: "contact",
         element: <Contact />,
-      },
+      },29
+      
     ],
   },
 ]);

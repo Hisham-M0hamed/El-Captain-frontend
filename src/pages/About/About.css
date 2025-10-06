@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+:root {
+  --bg-dark: #0C1B33;
+  --primary-accent: #F0A30B;
+  --text-dark: #555;
+  --text-light: #fff;
+  --bg-light-gray: #F8F8F8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* ---- Containers ---- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: var(--bg-dark);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-accent);
+  border-radius: 2px;
+}
+
+/* ---- HERO ---- */
+.page-hero {
+  padding: 100px 20px;
+  background: linear-gradient(rgba(12, 27, 51, 0.8), rgba(12, 27, 51, 0.8)),
+    url('https://images.pexels.com/photos/7319108/pexels-photo-7319108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+    no-repeat center center/cover;
+  text-align: center;
+  color: var(--text-light);
+}
+.page-hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+}
+.page-hero p {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ---- STORY ---- */
+.story-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 60px;
+}
+.story-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.story-content h2 {
+  font-size: 2.5rem;
+  color: var(--bg-dark);
+  margin-bottom: 20px;
+}
+.story-content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* ---- STATS ---- */
+.stats-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.stat-item i {
+  font-size: 3rem;
+  color: var(--primary-accent);
+  margin-bottom: 15px;
+}
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.stat-text {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* ---- WHY US ---- */
+.why-us-section {
+  background-color: var(--bg-light-gray);
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+.feature-card {
+  background-color: var(--text-light);
+  padding: 35px 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--primary-accent);
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-accent);
+  margin-bottom: 20px;
+}
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--bg-dark);
+}
+
+/* ---- CTA ---- */
+.cta-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(12, 27, 51, 0.9), rgba(12, 27, 51, 0.9)),
+    url('https://images.pexels.com/photos/249597/pexels-photo-249597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+    no-repeat center center/cover;
+  color: var(--text-light);
+}
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.cta-section p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  font-size: 1.1rem;
+}
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-accent);
+  color: var(--bg-dark);
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-accent);
+}
+.cta-button:hover {
+  background-color: transparent;
+  color: var(--primary-accent);
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+  .story-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .story-image {
+    order: -1;
+    margin-bottom: 40px;
+  }
+}

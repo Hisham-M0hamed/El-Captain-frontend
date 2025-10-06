@@ -5,16 +5,14 @@ import CardShip from "./CardShip";
 
 const Categories = () => {
   return (
-    <Container sx={{ marginTop: "90px", textAlign: "center" }}>
+    <Container sx={{ marginTop: "88px", textAlign: "center" }}>
       <Box>
         <Typography variant="h2">المنتجات المتاحة</Typography>
-        <hr sx={{ width: "10px", height: "3px" }} />
+        {/* <hr sx={{ width: "10px", height: "3px" }} /> */}
         <Box
           sx={{
-            marginTop: "40px",
             display: "flex",
             justifyContent: "space-between",
-            gap: "20px",
           }}
         >
           <CardAll />
@@ -22,14 +20,13 @@ const Categories = () => {
       </Box>
 
       <Box>
-        {" "}
         <Typography variant="h2"> الخيارات المتاحة للشحن </Typography>
         <Box
           sx={{
-            marginTop: "40px",
+            // marginTop: "40px",
             display: "flex",
             justifyContent: "space-between",
-            gap: "20px",
+            // gap: "20px",
           }}
         >
           <CardShip />

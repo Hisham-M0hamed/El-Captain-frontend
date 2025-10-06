@@ -19,14 +19,15 @@ const CardAll = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          marginBottom: "120px",
-          gap: "20px",
+          marginBottom: "60px",
+          // margin:'2px 50px',
+          // gap: "16px",
         }}
       >
         {[
           {
             id: "1",
-            image: "src/images/bulid.webp",
+            image: "/images/bulid.webp",
             text: "مواد بناء",
             desc: "نمتلك الخبرة في التعامل مع الخامات الثقيلة ومواد البناء من المحاجر والمصانع إلى مواقع المشاريع.",
             more: " المزيد",
@@ -34,7 +35,7 @@ const CardAll = () => {
           {
             id: "2",
 
-            image: "src/images/chemical.jpg",
+            image: "/images/chemical.jpg",
             text: "صناعات كيمياوية",
             desc: "  حلول لوجستية متخصصة لنقل المواد الكيماوية مع الالتزام التام بإجراءات الأمان المطلوبة.",
             more: "المزيد",
@@ -42,7 +43,7 @@ const CardAll = () => {
           {
             id: "3",
 
-            image: "src/images/doctor.jpg",
+            image: "/images/doctor.jpg",
             text: "صناعات دوائية ومستلزمات طبية",
             desc: "نقل آمن ومبرد للشحنات الدوائية الحساسة وفقًا لأعلى معايير الجودة والسلامة العالمية.",
             more: "المزيد",
@@ -50,7 +51,7 @@ const CardAll = () => {
           {
             id: "4",
 
-            image: "src/images/engineer.jpg",
+            image: "/images/engineer.jpg",
             text: "صناعات هندسة",
             desc: "  نقدم حلول نقل متخصصة للمنتجات الهندسية التي تتطلب دقة وعناية فائقة في التعامل.",
             more: "المزيد",
@@ -58,7 +59,7 @@ const CardAll = () => {
           {
             id: "5",
 
-            image: "src/images/oil.jpeg",
+            image: "/images/oil.jpeg",
             text: "مواد بترولية وزيوت",
             desc: "  نوفر جميع أنواع المواد البتروليةوالزيوت بأعلى جودة ووفقًا لأعلى معايير السلامة",
             more: "المزيد",
@@ -66,7 +67,7 @@ const CardAll = () => {
           {
             id: "6",
 
-            image: "src/images/stone.jpg",
+            image: "/images/stone.jpg",
             text: "مواد محجرية",
             desc: "متخصصون في توريد المواد المحجرية مثل الرمل والسن والحصى والرخام لمشروعات البناء والبنية التحتية.",
             more: "المزيد",
@@ -82,10 +83,13 @@ const CardAll = () => {
                     position: "relative",
                     textAlign: "center",
                     display: "flex",
+                    // gap:'20px',
+                    margin:'16px 16px',
                     flexDirection: "column",
                     alignItems: "center",
+                    borderRadius:'12px',
                     width: "320px",
-                    height: "470px",
+                    height: "490px",
                   }}
                 >
                   <CardActionArea>
@@ -93,8 +97,8 @@ const CardAll = () => {
                       component="img"
                       height="200"
                       image={item.image}
-                      width="400px"
-                      sx={{ objectFit: "cover", width: "350px" }}
+                      width="320px"
+                      sx={{ objectFit: "cover", width: "320px" }}
                     />
                     <CardContent>
                       <Typography
@@ -116,16 +120,16 @@ const CardAll = () => {
                       sx={{
                         textAlign: "center",
                         backgroundColor: "#0c1b33",
-                        padding: "8px 35px",
+                        padding: "4px 44px",
                         color: "#f6f6f6",
                         borderRadius: "20px",
                         ":hover": { bgcolor: "#f0a30b" },
                         position: "absolute",
-                        margin: "15px 15px",
-                        bottom: "1px",
+                        // margin: "15px 15px",
+                        bottom: "22px",
                         left: "50%",
                         transform: "translate(-50%)",
-                        fontSize: "23px",
+                        fontSize: "22px",
                       }}
                       size="large"
                       color="primary"
