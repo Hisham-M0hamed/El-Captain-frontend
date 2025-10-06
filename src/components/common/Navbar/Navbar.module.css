@@ -22,6 +22,7 @@
   display: flex;
   gap: 15px;
   flex-direction: column;
+  z-index: 10000;
 }
 .ourCategories {
   position: absolute;
@@ -29,31 +30,31 @@
   top: 35px;
   width: 200px;
   display: none;
+  z-index: 10000;
 }
 .categories:hover .ourCategories {
   display: flex;
   flex-direction: column;
+  z-index: 10000;
 }
 ul li {
   padding: 13px 15px;
   border-radius: 5px;
-   color:#f6f6f6;
-
+  color: #f6f6f6;
 }
-/* .ourCategories li:hover {
+.ourCategories li:hover {
   background-color: #f0a30b;
   font-weight: 700;
-} */
+}
 nav ul {
   display: flex;
-   color:#f6f6f6;
-
+  color: #f6f6f6;
 }
 nav .links {
- color:#f6f6f6;
+  color: #f6f6f6;
 }
-nav .links:hover{
- color: #f0a30b;
+nav .links:hover {
+  color: #f0a30b;
   font-weight: 700;
 }
 .login {
@@ -83,9 +84,8 @@ nav .links:hover{
   background-color: #f0a30b;
   /* font-weight: 700; */
 }
-link{
+link {
   text-decoration: none;
-   color:#f6f6f6;
-
-} 
+  color: #f6f6f6;
+}
 /* **************************************** */

@@ -4,12 +4,14 @@ import {
   Button,
   Container,
   Divider,
+  IconButton,
   Paper,
   Typography,
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import "./Home.css";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <Box className="image-container">
@@ -35,28 +37,11 @@ const Hero = () => {
             </Typography>
           </Paper>
           <Box className="links">
-            <Paper
-              // className="link"
-              sx={{
-                color: "#0c1b33",
-                bgcolor: "#f0a30b",
-                borderRadius: "70px",
-                marginRight: "5px",
-                width: "300px",
-                display: "flex",
-                flexDirection: "column",
-                fontSize: "25px",
-                fontWeight: "bold",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              للتواصل 01211663322
-            </Paper>
-            <Button className="link"> ابدا معانا</Button>
-            <Button className="link">
-              <WhatsAppIcon sx={{ fontSize: "40px" }} /> واتساب
-            </Button>
+            <Paper className="link">للتواصل 01211663322</Paper>
+
+            <Link to={"/contact"}>
+              <Paper className="link"> ابدا معانا</Paper>
+            </Link>
           </Box>
         </Box>
       </Container>

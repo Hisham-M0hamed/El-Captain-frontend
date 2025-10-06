@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
-import { Box, Container } from "@mui/material";
+import { Box, Container, IconButton } from "@mui/material";
 
 const CardShip = () => {
   return (
@@ -97,6 +97,7 @@ const CardShip = () => {
                 >
                   {item.more}
                 </Button>
+                <IconButton></IconButton>
               </CardActions>
             </Card>
           );
