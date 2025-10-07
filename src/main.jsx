@@ -27,6 +27,10 @@ const routes = createBrowserRouter([
         element: <PageNotFound />,
       },
       {
+        path: "El-Captain-frontend",
+        element: <Home />,
+      },
+      {
         path: "/home",
         element: <Home />,
       },
