@@ -1,14 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
-import {
-  createBrowserRouter,
-  Route,
-  Router,
-  RouterProvider,
-  Routes,
-} from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import Root from "./Root.jsx";
 import Home from "./pages/Home/Home.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
@@ -45,23 +38,23 @@ const routes = createBrowserRouter([
         path: "login",
         element: <Login />,
       },
-    {
-      path:"about",
-      element: <About />,
-    },
-    {
-      path:"partner",
-      element: <Partners />,
-    },
-    //  {
-    //   path:"track",
-    //   element: <Track />,
-    // },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "partner",
+        element: <Partners />,
+      },
+      //  {
+      //   path:"track",
+      //   element: <Track />,
+      // },
       {
         path: "contact",
         element: <Contact />,
-      },29
-      
+      },
+      29,
     ],
   },
 ]);
