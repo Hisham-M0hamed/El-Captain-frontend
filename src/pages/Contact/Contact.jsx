@@ -6,6 +6,8 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import { Box } from "@mui/material";
+import WhatsAppButton from "../WhatsAppButton";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,7 +54,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+    <Box className="contact-page">
+      <WhatsAppButton />
       <section className="page-hero">
         <div className="container">
           <h1>هل أنت مستعد للبدء؟</h1>
@@ -75,27 +78,39 @@ const Contact = () => {
 
               <div className="info-item">
                 <i className="fas fa-map-marker-alt">
-                    <FaMapLocationDot />
+                  <FaMapLocationDot />
                 </i>
                 <span>الواسطى، محافظة بني سويف، مصر</span>
               </div>
               <div className="info-item">
                 <i className="fas fa-phone-alt">
-                    <FaPhoneSquare />
+                  <FaPhoneSquare />
                 </i>
                 <span>+20 123 456 7890</span>
               </div>
               <div className="info-item">
                 <i className="fas fa-envelope">
-                    <MdEmail />
+                  <MdEmail />
                 </i>
                 <span>info@elkaptan.com</span>
               </div>
 
               <div className="social-icons">
-                <a href="#"><i className="fab fa-facebook-f"><FaFacebook /></i></a>
-                <a href="#"><i className="fab fa-twitter"><FaSquareXTwitter /></i></a>
-                <a href="#"><i className="fab fa-linkedin-in"><FaLinkedin /></i></a>
+                <a href="#">
+                  <i className="fab fa-facebook-f">
+                    <FaFacebook />
+                  </i>
+                </a>
+                <a href="#">
+                  <i className="fab fa-twitter">
+                    <FaSquareXTwitter />
+                  </i>
+                </a>
+                <a href="#">
+                  <i className="fab fa-linkedin-in">
+                    <FaLinkedin />
+                  </i>
+                </a>
               </div>
             </div>
 
@@ -127,7 +142,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <textarea
                     name="message"
@@ -160,7 +175,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Box>
   );
 };
 

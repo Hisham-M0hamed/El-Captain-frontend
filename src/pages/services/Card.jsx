@@ -27,6 +27,7 @@ const CardAll = () => {
         {[
           {
             id: "1",
+            link: "build",
             image: "/images/bulid.webp",
             text: "مواد بناء",
             desc: "نمتلك الخبرة في التعامل مع الخامات الثقيلة ومواد البناء من المحاجر والمصانع إلى مواقع المشاريع.",
@@ -75,7 +76,7 @@ const CardAll = () => {
         ].map((item, idx) => {
           return (
             <Box>
-              <Link to={`./Card.jsx/${item.id}`}>
+              <Link to={"/build"}>
                 <Card
                   className="card"
                   key={idx}
@@ -84,10 +85,10 @@ const CardAll = () => {
                     textAlign: "center",
                     display: "flex",
                     // gap:'20px',
-                    margin:'16px 16px',
+                    margin: "16px 16px",
                     flexDirection: "column",
                     alignItems: "center",
-                    borderRadius:'12px',
+                    borderRadius: "12px",
                     width: "320px",
                     height: "490px",
                   }}

@@ -10,6 +10,7 @@ import Services from "./pages/services/Services.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import About from "./pages/About/About.jsx";
 import Partners from "./pages/Partners/Partners.jsx";
+import Build from "./pages/ProductPage/build/Build";
 // import Track from "./pages/Track-order/Track.jsx";
 
 const routes = createBrowserRouter([
@@ -58,7 +59,10 @@ const routes = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
-      29,
+      {
+        path: "build",
+        element: <Build />,
+      },
     ],
   },
 ]);

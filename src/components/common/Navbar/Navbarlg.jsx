@@ -3,7 +3,12 @@ import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaravan } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+import { Link as RouterLink, useLocation } from "react-router-dom"; // مهم جداً
+
 const Navbarlg = () => {
+  const location = useLocation(); // للحصول على المسار الحالي
+
   return (
     <Box
       sx={{
@@ -26,9 +31,33 @@ const Navbarlg = () => {
           { link: "partner", text: "شركائنا" },
           { link: "contact", text: "اتصل بنا" },
         ].map((item, idx) => {
+          const isActive = location.pathname === item.link;
+
           return (
-            <Box key={idx}>
-              <Link to={item.link} style={{ color: "white" }}>
+            <Box key={idx} to={item.link}>
+              <Button
+                to={item.link}
+                component={RouterLink}
+                color="inherit"
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor: "rgba(255, 255, 255, 0.08)",
+                    borderBottom: "3px solid white",
+                  },
+                  ...(isActive && {
+                    fontWeight: "bold",
+                    backgroundColor: "rgba(255, 255, 255, 0.12)",
+                    borderBottom: "3px solid yellow",
+                  }),
+                  // "&:hover": {
+                  //   backgroundColor: "rgba(255, 255, 255, 0.08)",
+                  //   borderBottom: isActive
+                  //     ? "3px solid yellow"
+                  //     : "3px solid white",
+                  // },
+                }}
+              >
                 <Typography
                   sx={{
                     cursor: "pointer",
@@ -38,7 +67,7 @@ const Navbarlg = () => {
                 >
                   {item.text}
                 </Typography>
-              </Link>
+              </Button>
             </Box>
           );
         })}
@@ -111,7 +140,7 @@ const Navbarlg = () => {
               ":hover": { color: "#f0a30b" },
             }}
           >
-          <FaCaravan />
+            <FaCaravan />
           </IconButton>
         </Paper>
         <Link to="/login">

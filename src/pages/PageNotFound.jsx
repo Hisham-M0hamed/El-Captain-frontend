@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import WhatsAppButton from "./WhatsAppButton";
 
 const PageNotFound = () => {
   return (
@@ -39,6 +40,7 @@ const PageNotFound = () => {
       >
         Back to Homepage
       </Link>
+      <WhatsAppButton />
     </div>
   );
 };

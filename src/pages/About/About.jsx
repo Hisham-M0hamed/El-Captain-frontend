@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import { FaTruckMoving, FaUsers, FaBriefcase, FaGlobeAfrica, FaUserTie, FaCogs, FaShieldAlt, FaHandshake } from "react-icons/fa";
+import {
+  FaTruckMoving,
+  FaUsers,
+  FaBriefcase,
+  FaGlobeAfrica,
+  FaUserTie,
+  FaCogs,
+  FaShieldAlt,
+  FaHandshake,
+} from "react-icons/fa";
+import WhatsAppButton from "../WhatsAppButton";
 
 const About = () => {
   useEffect(() => {
@@ -80,22 +90,30 @@ const About = () => {
         <div className="container stats-grid">
           <div className="stat-item">
             <FaTruckMoving />
-            <div className="stat-number" data-target="150">0</div>
+            <div className="stat-number" data-target="150">
+              0
+            </div>
             <div className="stat-text">شاحنة ومعدة متخصصة</div>
           </div>
           <div className="stat-item">
             <FaUsers />
-            <div className="stat-number" data-target="300">0</div>
+            <div className="stat-number" data-target="300">
+              0
+            </div>
             <div className="stat-text">شراكات ناجحة</div>
           </div>
           <div className="stat-item">
             <FaBriefcase />
-            <div className="stat-number" data-target="10">0</div>
+            <div className="stat-number" data-target="10">
+              0
+            </div>
             <div className="stat-text">سنوات من الخبرة العميقة</div>
           </div>
           <div className="stat-item">
             <FaGlobeAfrica />
-            <div className="stat-number" data-target="3">0</div>
+            <div className="stat-number" data-target="3">
+              0
+            </div>
             <div className="stat-text">أنواع الشحن (بري، بحري، جوي)</div>
           </div>
         </div>
@@ -107,7 +125,9 @@ const About = () => {
           <h2 className="section-title">لماذا نحن الخيار الأفضل؟</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon"><FaUserTie /></div>
+              <div className="feature-icon">
+                <FaUserTie />
+              </div>
               <h3>خبرة وكفاءة لا مثيل لها</h3>
               <p>
                 نمتلك فريقًا متخصصًا وذا خبرة عميقة في إدارة كافة تحديات النقل،
@@ -115,7 +135,9 @@ const About = () => {
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon"><FaCogs /></div>
+              <div className="feature-icon">
+                <FaCogs />
+              </div>
               <h3>حلول متكاملة وشاملة</h3>
               <p>
                 نوفر لك كل ما تحتاجه في مكان واحد، من نقل الخامات المعدنية
@@ -123,7 +145,9 @@ const About = () => {
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon"><FaShieldAlt /></div>
+              <div className="feature-icon">
+                <FaShieldAlt />
+              </div>
               <h3>التزام تام بالجودة والسلامة</h3>
               <p>
                 مهمتنا هي تقديم خدمات لوجستية موثوقة مبنية على أعلى معايير
@@ -131,7 +155,9 @@ const About = () => {
               </p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon"><FaHandshake /></div>
+              <div className="feature-icon">
+                <FaHandshake />
+              </div>
               <h3>شراكات طويلة الأمد</h3>
               <p>
                 نعمل دائما على بناء شراكات قائمة على الثقة والشفافية، لأن نجاحك
@@ -150,14 +176,12 @@ const About = () => {
             تواصل معنا اليوم لمناقشة احتياجاتك اللوجستية والحصول على عرض سعر
             مخصص.
           </p>
-          <a href="/contact" className="cta-button">تواصل معنا الآن</a>
+          <a href="/contact" className="cta-button">
+            تواصل معنا الآن
+          </a>
         </div>
       </section>
-
-      {/* ---- FOOTER ---- */}
-      <footer className="footer">
-        <p>© 2025 شركة الكابتن لخدمات النقل. جميع الحقوق محفوظة.</p>
-      </footer>
+      <WhatsAppButton />
     </div>
   );
 };

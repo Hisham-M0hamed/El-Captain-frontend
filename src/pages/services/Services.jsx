@@ -1,6 +1,7 @@
 import { Box, Container } from "@mui/material";
 import React from "react";
 import Categories from "./Categories";
+import WhatsAppButton from "../WhatsAppButton";
 
 const Services = () => {
   return (
@@ -18,6 +19,7 @@ const Services = () => {
       <Container>
         <Categories />
       </Container>
+      <WhatsAppButton />
     </Box>
   );
 };

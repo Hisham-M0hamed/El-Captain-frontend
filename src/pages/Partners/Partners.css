@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
 
 :root {
-  --bg-dark: #0C1B33;
-  --primary-accent: #F0A30B;
+  --bg-dark: #0c1b33;
+  --primary-accent: #f0a30b;
   --text-dark: #555555;
-  --text-light: #FFFFFF;
-  --bg-light-gray: #F8F8F8;
+  --text-light: #ffffff;
+  --bg-light-gray: #f8f8f8;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
-body, .partners-page {
+body,
+.partners-page {
   background-color: var(--text-light);
   color: var(--text-dark);
 }
-
-
 
 /* --- Hero Section --- */
 .page-hero {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(rgba(12, 27, 51, 0.85), rgba(12, 27, 51, 0.85)),
-    url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop')
-    no-repeat center center/cover;
+    url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop")
+      no-repeat center center/cover;
   color: var(--text-light);
 }
 
@@ -83,23 +82,24 @@ body, .partners-page {
   height: 120px;
   transition: all 0.3s ease;
   filter: grayscale(100%);
+  margin: 30px;
 }
 
 .partner-card:hover {
   filter: grayscale(0%);
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .partner-card img {
-  max-width: 150px;
-  max-height: 60px;
+  max-width: 280px;
+  max-height: 160px;
 }
 
 /* --- CTA Section --- */
 .join-us-cta {
-  background-color: #F8F8F8;
-  color: #0C1B33;
+  background-color: #f8f8f8;
+  color: #0c1b33;
   text-align: center;
 }
 
@@ -125,13 +125,13 @@ body, .partners-page {
   transition: all 0.3s ease;
   border: 2px solid var(--primary-accent);
   text-decoration: none;
+  margin: 15px;
 }
 
 .cta-button:hover {
   background-color: transparent;
   color: var(--primary-accent);
 }
-
 
 /* --- Responsive Design --- */
 @media (max-width: 1024px) {
@@ -144,7 +144,6 @@ body, .partners-page {
 }
 
 @media (max-width: 768px) {
- 
   .partner-category-title {
     font-size: 2rem;
   }
@@ -182,8 +181,8 @@ body, .partners-page {
   }
 
   .partner-card img {
-    max-width: 100px;
-    max-height: 40px;
+    max-width: 240px;
+    max-height: 120px;
   }
 
   .join-us-cta h2 {
@@ -198,6 +197,4 @@ body, .partners-page {
     font-size: 0.95rem;
     padding: 8px 20px;
   }
-
-  
 }

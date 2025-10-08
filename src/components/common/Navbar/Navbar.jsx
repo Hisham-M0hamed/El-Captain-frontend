@@ -62,7 +62,10 @@ const Navbar = () => {
                 </div>
               </div>
               <ul className={styles.ourCategories}>
-                <li>مواد بناء</li>
+                <Link to={"/build"}>
+                  {" "}
+                  <li>مواد بناء</li>
+                </Link>
                 <li>صناعات كيمياوية</li>
                 <li>صناعات دوائية</li>
                 <li>صناعات هندسية</li>

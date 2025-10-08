@@ -22,7 +22,7 @@ const Hero = () => {
           width: "100%",
           height: "80vh",
         }}
-        src="src\images\hero.jpg"
+        src="public\images\hero.jpg"
       />
       <div className="overlay"></div>
       <Container>

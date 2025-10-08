@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/El-Captain-frontend/",
+  // base: "/El-Captain-frontend/",
   plugins: [react()],
-  build: {
-    outDir: "docs",
-  },
+  // build: {
+  //   outDir: "docs",
+  // },
 });
