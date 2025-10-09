@@ -2,7 +2,7 @@ import { Box, Container } from "@mui/material";
 import React from "react";
 import Categories from "./Categories";
 import WhatsAppButton from "../WhatsAppButton";
-
+import "./category.css";
 const Services = () => {
   return (
     <Box>

@@ -20,7 +20,7 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           width: "100%",
-          height: "80vh",
+          height: "750px",
         }}
         src="public\images\hero.jpg"
       />

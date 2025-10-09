@@ -15,6 +15,8 @@ const Navbarlg = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        width: "100%",
+        margin: "0 auto",
       }}
     >
       <Box
@@ -22,6 +24,7 @@ const Navbarlg = () => {
           display: "flex",
           gap: "25px",
           mx: "20px",
+          // position: "fixed",
         }}
       >
         {[

@@ -7,6 +7,9 @@
   position: relative;
   padding: 10px 35px;
   width: 100%;
+  /* margin: 0 auto; */
+  /* position: fixed; */
+  /* z-index: 100000; */
 }
 .logo {
   display: flex;
@@ -27,7 +30,7 @@
 .ourCategories {
   position: absolute;
   background-color: #0c1b33;
-  top: 35px;
+  top: 44px;
   width: 200px;
   display: none;
 }

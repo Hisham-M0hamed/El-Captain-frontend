@@ -33,32 +33,29 @@ const Register = () => {
       setError("");
       setSuccess("");
 
-      const res = await fetch(
-        "http://localhost:8000/api/v1/users/signup",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: formData.name,
-            phoneNumbers: formData.phoneNumbers,
-            password: formData.password,
-            passwordConfirm: formData.passwordConfirm,
-          }),
-        }
-      );
+      const res = await fetch("http://localhost:8000/api/v1/users/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phoneNumbers: formData.phoneNumbers,
+          password: formData.password,
+          passwordConfirm: formData.passwordConfirm,
+        }),
+      });
 
       const data = await res.json();
 
       if (res.ok) {
         setSuccess("تم إنشاء الحساب بنجاح 🎉");
-        setTimeout(() => navigate("/Login"), 1500); 
+        setTimeout(() => navigate("/Login"), 1500);
       } else {
         setError(data.message || "حدث خطأ أثناء التسجيل");
       }
-   } catch (err) {
-  console.error(err); 
-  setError("فشل الاتصال بالسيرفر");
-} finally {
+    } catch (err) {
+      console.error(err);
+      setError("فشل الاتصال بالسيرفر");
+    } finally {
       setLoading(false);
     }
   };
@@ -138,9 +135,9 @@ const Register = () => {
             <p>
               لديك حساب بالفعل؟ <Link to="/Login">تسجيل الدخول</Link>
             </p>
-            <p>
+            {/* <p>
               <Link to="/">العودة للرئيسية</Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

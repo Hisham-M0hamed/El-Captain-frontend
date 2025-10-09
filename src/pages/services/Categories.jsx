@@ -9,6 +9,16 @@ const Categories = () => {
       <Box>
         <Typography variant="h2">المنتجات المتاحة</Typography>
         {/* <hr sx={{ width: "10px", height: "3px" }} /> */}
+        <hr
+          style={{
+            width: "100px",
+            height: "px",
+            color: "#f0a30b",
+            bgcolor: "#f0a30b",
+            borderColor: "#f0a30b",
+            margin: "24px auto",
+          }}
+        />
         <Box
           sx={{
             display: "flex",
@@ -21,6 +31,16 @@ const Categories = () => {
 
       <Box>
         <Typography variant="h2"> الخيارات المتاحة للشحن </Typography>
+        <hr
+          style={{
+            width: "100px",
+            height: "px",
+            color: "#f0a30b",
+            bgcolor: "#f0a30b",
+            borderColor: "#f0a30b",
+            margin: "24px auto",
+          }}
+        />
         <Box
           sx={{
             // marginTop: "40px",

@@ -35,8 +35,24 @@ const Navbar = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#0c1b33" }}>
-      <Container dir="rtl" className={styles.containerNav}>
+    <Box
+      sx={{
+        bgcolor: "#0c1b33",
+        position: "fixed",
+        zIndex: "1000000",
+        width: "100%",
+        top: "0",
+        left: "0",
+      }}
+    >
+      <Container
+        sx={{
+          zIndex: "100000",
+          margin: "0 auto",
+        }}
+        dir="rtl"
+        className={styles.containerNav}
+      >
         {useMediaQuery("(min-width:1100px)") && (
           <div className={styles.logo}>
             <h1>الكابتن</h1>
@@ -76,6 +92,8 @@ const Navbar = () => {
         {useMediaQuery("(max-width:1100px)") && (
           <Box sx={{ marginRight: "20px" }}>
             <div className={styles.logo}>
+              <h1>الكابتن</h1>
+
               <div className={styles.categories}>
                 <div
                   style={{
@@ -103,7 +121,6 @@ const Navbar = () => {
                   <li>صناعات هندسية</li>
                 </ul>
               </div>
-              <h1>الكابتن</h1>
             </div>
           </Box>
         )}
@@ -127,6 +144,7 @@ const Navbar = () => {
               height: "75%",
               bgcolor: "#0c1b33",
               color: "#f6f6f6",
+              top: "40px",
             },
           }}
         >
@@ -199,6 +217,7 @@ const Navbar = () => {
                   marginBottom: "20px",
                 }}
               >
+                {/* <Link to={"/shop"}> */}
                 <IconButton
                   sx={{
                     fontSize: "25px",
@@ -208,6 +227,8 @@ const Navbar = () => {
                 >
                   <FaCartShopping />
                 </IconButton>
+                {/* </Link> */}
+                {/* <Link to="/track"> */}
                 <IconButton
                   sx={{
                     fontSize: "25px",
@@ -217,12 +238,13 @@ const Navbar = () => {
                 >
                   <FaCaravan />
                 </IconButton>
+                {/* </Link> */}
               </div>
               <Link to="/login">
                 <Button
                   sx={{
                     padding: "10px 25px",
-                    borderRadius: "15px",
+                    borderRadius: "20px",
                     border: "1px solid #f0a30b",
                     bgcolor: "initial",
                     fontSize: "20px",

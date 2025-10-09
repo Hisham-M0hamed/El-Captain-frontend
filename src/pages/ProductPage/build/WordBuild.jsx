@@ -3,23 +3,40 @@ import React from "react";
 
 const WordBuild = () => {
   return (
-    <Container sx={{ margin: "60px 0" }}>
+    <Container
+      sx={{
+        margin: "60px 0",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "start",
+        // right: 0,
+      }}
+    >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "start",
           gap: "25px",
         }}
       >
-        <h1 style={{ color: "#333" }}>ما يميزنا في نقل مواد البناء؟</h1>
+        <h1
+          style={{
+            color: "#333",
+            margin: "10px auto",
+            textAlign: "center",
+          }}
+        >
+          ما يميزنا في نقل مواد البناء؟
+        </h1>
 
         <Paper
           elevation={0}
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: "right",
+            right: "30px",
           }}
         >
           <h5 style={{ fontSize: "24px", fontWeight: "bold", color: "#444" }}>
@@ -35,7 +52,8 @@ const WordBuild = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: "right",
+            right: "30px",
           }}
         >
           <h5 style={{ fontSize: "24px", fontWeight: "bold", color: "#444" }}>
@@ -51,7 +69,8 @@ const WordBuild = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: "right",
+            right: 0,
           }}
         >
           <h5 style={{ fontSize: "24px", fontWeight: "bold", color: "#444" }}>

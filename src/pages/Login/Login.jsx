@@ -10,15 +10,14 @@ const Login = () => {
     console.log(" Phone Number:", phoneNumbers);
     console.log(" Password:", password);
 
-   
-     fetch("/api/v1/users/login", {
-       method: "POST",
-       headers: { "Content-Type": "application/json" },
-       body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
-     })
-       .then((res) => res.json())
-       .then((data) => console.log(data))
-       .catch((err) => console.error(err));
+    fetch("/api/v1/users/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.error(err));
   };
 
   return (
@@ -33,7 +32,7 @@ const Login = () => {
           <h1>مرحباً بعودتك</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-             <input
+              <input
                 type="text"
                 placeholder="رقم الهاتف"
                 value={phoneNumbers}
@@ -64,11 +63,11 @@ const Login = () => {
 
           <div className="form-footer">
             <p>
-  ليس لديك حساب؟ <Link to="/Register">إنشاء حساب جديد</Link>
+              ليس لديك حساب؟ <Link to="/Register">إنشاء حساب جديد</Link>
             </p>
-            <p>
+            {/* <p>
               <a href="/">العودة للرئيسية</a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

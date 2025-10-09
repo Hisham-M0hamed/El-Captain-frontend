@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
         target="_blank"
         sx={{
           backgroundColor: "#25D366",
-          width: "100px",
+          width: "85px",
           height: "85px",
           "&:hover": {
             backgroundColor: "#1DA851",

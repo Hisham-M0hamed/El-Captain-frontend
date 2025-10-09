@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
 
 :root {
-  --bg-dark: #0C1B33;
-  --primary-accent: #F0A30B;
+  --bg-dark: #0c1b33;
+  --primary-accent: #f0a30b;
   --text-dark: #555;
   --text-light: #fff;
-  --bg-light-gray: #F8F8F8;
+  --bg-light-gray: #f8f8f8;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -56,8 +56,8 @@ body {
 .page-hero {
   padding: 100px 20px;
   background: linear-gradient(rgba(12, 27, 51, 0.8), rgba(12, 27, 51, 0.8)),
-    url('https://images.pexels.com/photos/7319108/pexels-photo-7319108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
-    no-repeat center center/cover;
+    url("https://images.pexels.com/photos/7319108/pexels-photo-7319108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+      no-repeat center center/cover;
   text-align: center;
   color: var(--text-light);
 }
@@ -133,13 +133,13 @@ body {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease; */
   border-top: 4px solid var(--primary-accent);
 }
-.feature-card:hover {
+/* .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-}
+} */
 .feature-icon {
   font-size: 3rem;
   color: var(--primary-accent);
@@ -156,8 +156,8 @@ body {
   padding: 60px 20px;
   text-align: center;
   background: linear-gradient(rgba(12, 27, 51, 0.9), rgba(12, 27, 51, 0.9)),
-    url('https://images.pexels.com/photos/249597/pexels-photo-249597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
-    no-repeat center center/cover;
+    url("https://images.pexels.com/photos/249597/pexels-photo-249597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+      no-repeat center center/cover;
   color: var(--text-light);
 }
 .cta-section h2 {

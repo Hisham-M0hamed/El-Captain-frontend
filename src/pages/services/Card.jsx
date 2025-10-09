@@ -91,6 +91,10 @@ const CardAll = () => {
                     borderRadius: "12px",
                     width: "320px",
                     height: "490px",
+                    "&:hover": {
+                      transform: "translateY(-10px)",
+                      transition: "transform 0.3s ease",
+                    },
                   }}
                 >
                   <CardActionArea>
