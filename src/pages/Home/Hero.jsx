@@ -28,7 +28,7 @@ const Hero = () => {
       <Container>
         <Box className="home" sx={{ padding: "20px" }}>
           <Paper className="text" elevation={0}>
-            <Typography className="h" variant="h2">
+            <Typography className="h" variant="h2" >
               شريكك الاستراتيجي في قطاع النقل
             </Typography>
             <Typography className="p" variant="p">
