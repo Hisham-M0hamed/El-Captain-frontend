@@ -22,7 +22,7 @@ const Hero = () => {
           width: "100%",
           height: "750px",
         }}
-        src="../../../public/images/hero.jpg"
+        src="../../../public/images/bulid.webp"
       />
       <div className="overlay"></div>
       <Container>
