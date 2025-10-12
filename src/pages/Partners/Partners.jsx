@@ -25,18 +25,19 @@ const Partners = () => {
               شركاء قطاع الصناعة والمقاولات
             </h2>
           </div>
+
           <div className="partner-grid">
             <div className="partner-card">
-              <img src="public\images\arab.png" alt="Nike" />
+              <img src="/images/arab.png" alt="Arab" />
             </div>
             <div className="partner-card">
-              <img src="public\images\oil.png" alt="Nestle" />
+              <img src="/images/oil.png" alt="Oil" />
             </div>
             <div className="partner-card">
-              <img src="public\images\orascom.png" alt="Orascom" />
+              <img src="/images/orascom.png" alt="Orascom" />
             </div>
             <div className="partner-card">
-              <img src="public\images\elswedy.png" alt="Google" />
+              <img src="/images/elswedy.png" alt="Elswedy" />
             </div>
           </div>
 
@@ -46,15 +47,16 @@ const Partners = () => {
               شركاء قطاع التجارة والتوزيع
             </h2>
           </div>
+
           <div className="partner-grid">
             <div className="partner-card">
-              <img src="public\images\post.png" alt="AWS" />
+              <img src="/images/post.png" alt="Post" />
             </div>
             <div className="partner-card">
-              <img src="public\images\post2.jpeg" alt="X" />
+              <img src="/images/post2.jpeg" alt="Post2" />
             </div>
             <div className="partner-card">
-              <img src="public\images\abs.png" alt="W3Schools" />
+              <img src="/images/abs.png" alt="ABS" />
             </div>
           </div>
         </div>
