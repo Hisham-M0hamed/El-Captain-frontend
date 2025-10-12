@@ -6,6 +6,7 @@ import {
   Divider,
   IconButton,
   Paper,
+  Stack,
   Typography,
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -26,22 +27,32 @@ const Hero = () => {
       />
       <div className="overlay"></div>
       <Container>
-        <Box className="home" sx={{ padding: "20px" }}>
-          <Paper className="text" elevation={0}>
-            <Typography className="h" variant="h2">
-              شريكك الاستراتيجي في قطاع النقل
-            </Typography>
-            <Typography className="p" variant="p">
-              حلول لوجستية متكاملة وموثوقة، تضمن أن تكون عملية شحن بضائعك جزءاً
-              سلساً وميسراً من نجاحك.
-            </Typography>
-          </Paper>
-          <Box className="links">
-            <Paper className="link">للتواصل 01211663322</Paper>
+        <Box
+          className="home"
+          sx={{
+            padding: "20px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Box>
+            <Paper className="text" elevation={0}>
+              <Typography className="h" variant="h2">
+                شريكك الاستراتيجي في قطاع النقل
+              </Typography>
+              <Typography className="p" variant="p">
+                حلول لوجستية متكاملة وموثوقة، تضمن أن تكون عملية شحن بضائعك
+                جزءاً سلساً وميسراً من نجاحك.
+              </Typography>
+            </Paper>
+            <Box className="links">
+              <Paper className="link">للتواصل 01211663322</Paper>
 
-            <Link to={"/contact"}>
-              <Paper className="link"> ابدا معانا</Paper>
-            </Link>
+              <Link to={"/contact"}>
+                <Paper className="link"> ابدا معانا</Paper>
+              </Link>
+            </Box>
+            <Box></Box>
           </Box>
         </Box>
       </Container>
