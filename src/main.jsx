@@ -72,14 +72,7 @@ const routes = createBrowserRouter([
     ],
   },
 ]);
-{
-  /* <Router>
-  <Routes>
-    <Route path="/login" element={<Login />} />
-    <Route path="/Register" element={<Register />} />
-  </Routes>
-</Router>; */
-}
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={routes} />

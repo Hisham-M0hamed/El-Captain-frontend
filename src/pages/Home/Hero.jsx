@@ -23,7 +23,7 @@ const Hero = () => {
           width: "100%",
           height: "750px",
         }}
-        src="public\images\hero.jpg"
+        src="../../../public/images/bulid.webp"
       />
       <div className="overlay"></div>
       <Container>
@@ -46,10 +46,15 @@ const Hero = () => {
               </Typography>
             </Paper>
             <Box className="links">
-              <Paper className="link">للتواصل 01211663322</Paper>
+              <Paper elevation={0} className="link">
+                للتواصل 01211663322
+              </Paper>
 
               <Link to={"/contact"}>
-                <Paper className="link"> ابدا معانا</Paper>
+                <Paper elevation={0} className="link">
+                  {" "}
+                  ابدا معانا
+                </Paper>
               </Link>
             </Box>
             <Box></Box>
