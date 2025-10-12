@@ -37,14 +37,14 @@ const Login = () => {
       console.log("Response:", data);
 
       if (res.ok && (data.token || data.status === "success")) {
-        alert("✅ تم تسجيل الدخول بنجاح!");
-        window.location.href = "/dashboard"; // ← غيّرها حسب الصفحة اللي عايز تروحها بعد اللوجين
+        // alert("✅ تم تسجيل الدخول بنجاح!");
+        window.location.href = "/home";
       } else {
         alert(data.message || "❌ فشل تسجيل الدخول، تحقق من البيانات.");
       }
     } catch (error) {
       console.error("Error during login:", error);
-      alert("حدث خطأ أثناء الاتصال بالسيرفر.");
+      // alert("حدث خطأ أثناء الاتصال بالسيرفر.");
     }
   };
 
