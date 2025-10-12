@@ -5,20 +5,49 @@ const Login = () => {
   const [phoneNumbers, setPhoneNumbers] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(" Phone Number:", phoneNumbers);
-    console.log(" Password:", password);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(" Phone Number:", phoneNumbers);
+  //   console.log(" Password:", password);
 
-    fetch("/api/v1/users/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.error(err));
+  //   fetch("/api/v1/users/login", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data))
+  //     .catch((err) => console.error(err));
+  // };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log("Phone Number:", phoneNumbers);
+    console.log("Password:", password);
+
+    try {
+      const res = await fetch("/api/v1/users/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phoneNumbers, password }),
+      });
+
+      const data = await res.json();
+      console.log("Response:", data);
+
+      if (res.ok && (data.token || data.status === "success")) {
+        alert("✅ تم تسجيل الدخول بنجاح!");
+        window.location.href = "/dashboard"; // ← غيّرها حسب الصفحة اللي عايز تروحها بعد اللوجين
+      } else {
+        alert(data.message || "❌ فشل تسجيل الدخول، تحقق من البيانات.");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      alert("حدث خطأ أثناء الاتصال بالسيرفر.");
+    }
   };
+
 
   return (
     <div className="auth-container">
