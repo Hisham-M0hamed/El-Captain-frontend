@@ -11,6 +11,7 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 import WhatsAppButton from "../WhatsAppButton";
+import HeroAbout from "./heroAbout";
 
 const About = () => {
   useEffect(() => {
@@ -57,6 +58,7 @@ const About = () => {
           نحن لسنا مجرد شركة نقل، بل كيان متخصص في توفير حلول لوجستية متكاملة
           وموثوقة تضمن نجاحك.
         </p>
+        {/* <HeroAbout /> */}
       </section>
 
       {/* ---- STORY ---- */}

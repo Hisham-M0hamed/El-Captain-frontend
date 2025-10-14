@@ -4,42 +4,46 @@ import "./slick.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const slick = () => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
-    rtl: true, 
+    rtl: true,
     arrows: false,
     pauseOnHover: false,
     swipe: false,
+    responsive: [
+      {
+        breakpoint: 1024, // md
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600, // sm
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   const logos = [
     "public/images/post.png",
-    "public/images/abs.png",
-    "public/images/post2.png",
-    "public/images/abs.png",
+    "./images/hero.jpg",
+    "./images/orascom.png",
+    "./images/elswedy.png",
+    "./images/arab.png",
+    "./images/chemical.jpg",
+    "./images/engineer.jpg",
+    "public/images/oil.png",
     "public/images/post.png",
-    "public/images/post2.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/post.png",
-    "public/images/abs.png",
-    "public/images/post2.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
-    "public/images/abs.png",
     "public/images/abs.png",
   ];
 

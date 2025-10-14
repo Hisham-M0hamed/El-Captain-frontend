@@ -1,10 +1,9 @@
-
-
 .logos-slider {
   overflow: hidden;
   padding: 30px 0;
   background-color: #fff;
-  direction: rtl; 
+  direction: rtl;
+  margin: 70px 50px;
 }
 
 .logo-slide {
@@ -12,14 +11,16 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  gap: 30px;
 }
 
 .logo-slide img {
-  width: 100px;
-  height: auto;
+  width: 250px;
+  border-radius: 25px;
+  height: 200px;
   transition: transform 0.3s ease-in-out;
-  filter: grayscale(100%);
-  opacity: 0.8;
+  /* filter: grayscale(100%); */
+  /* opacity: 0.8; */
 }
 
 .logo-slide img:hover {
@@ -29,8 +30,12 @@
 }
 
 @media (max-width: 992px) {
+  .logo-slide {
+    gap: 20px;
+  }
   .logo-slide img {
-    width: 80px;
+    width: 200px;
+    margin: 5px 20px;
   }
 }
 
