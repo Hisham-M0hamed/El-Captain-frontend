@@ -24,7 +24,7 @@ const ContactHome = () => {
           }}
         >
           <h1 style={{ fontSize: "40px" }}>لنبدأ العمل معاً</h1>
-          <hr
+          {/* <hr
             style={{
               width: "100px",
               height: "px",
@@ -33,7 +33,7 @@ const ContactHome = () => {
               borderColor: "#f0a30b",
               margin: "24px 4px",
             }}
-          />
+          /> */}
           <DecorativeLine />
 
           <p
