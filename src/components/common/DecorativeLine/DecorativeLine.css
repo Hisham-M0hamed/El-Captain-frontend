@@ -1,0 +1,6 @@
+.decorative-line {
+  display: block;
+  width: 100%;
+  max-width: 255px;
+  height: auto;
+}
