@@ -21,7 +21,7 @@
 }
 .image-container .home {
   position: absolute;
-  top: 25%;
+  top: 120px;
 
   /* right: 100px; */
 }
@@ -67,11 +67,11 @@
   left: 7%;
   font-size: 1.8rem;
 }
-.image-container .link:hover {
+/* .image-container .link:hover {
   background-color: initial;
   border: 3px solid #f0a30b;
   color: #f0a30b;
-}
+} */
 @media (max-width: 900px) {
   .image-container .text {
     width: 600px;
@@ -86,7 +86,7 @@
 }
 @media (max-width: 620px) {
   .image-container .home {
-    top: 25%;
+    top: 120px;
     max-width: 90%;
   }
   .image-container .text {
