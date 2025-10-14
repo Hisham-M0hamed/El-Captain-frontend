@@ -7,6 +7,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
+import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 const QA = () => {
   return (
     <Box sx={{ margin: "60px 0" }}>
@@ -22,7 +23,7 @@ const QA = () => {
           }}
         >
           <h1 style={{ fontSize: "40px" }}> الأسئلة الشائعة</h1>
-          <hr
+          {/* <hr
             style={{
               width: "100px",
               height: "px",
@@ -31,7 +32,9 @@ const QA = () => {
               borderColor: "#f0a30b",
               margin: "24px 4px",
             }}
-          />
+          /> */}
+          <DecorativeLine />
+
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}

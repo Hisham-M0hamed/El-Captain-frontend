@@ -52,8 +52,8 @@
   align-content: center;
   /* gap: 20px; */
   /* margin: 16px; */
-  background-color: #fbfbfb;
-  color: #333;
+  background-color: #d76f38;
+  color: #f6f6f6;
   padding: 4px 15px;
   border-radius: 8px;
   width: 320px;
@@ -68,11 +68,11 @@
   left: 7%;
   font-size: 1.8rem;
 }
-/* .image-container .link:hover {
-  background-color: initial;
-  border: 3px solid #f0a30b;
-  color: #f0a30b;
-} */
+.image-container .link:hover {
+  background-color: #fbfbfb;
+  border: 3px solid #f3f3f3;
+  color: #d76f38;
+}
 @media (max-width: 900px) {
   .image-container .text {
     width: 600px;

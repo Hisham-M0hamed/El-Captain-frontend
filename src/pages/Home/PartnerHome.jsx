@@ -2,6 +2,7 @@ import { Box, Container, Paper } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 const PartnerHome = () => {
   return (
     <Box>
@@ -18,14 +19,16 @@ const PartnerHome = () => {
           }}
         >
           <h1 style={{ fontSize: "40px" }}> شركاء النجاح</h1>
-          <hr
+          <DecorativeLine />
+
+          {/* <hr
             style={{
               width: "100px",
               color: "#f0a30b",
               borderColor: "#f0a30b",
               margin: "24px 4px",
             }}
-          />
+          /> */}
           <p
             style={{
               fontSize: "18px",

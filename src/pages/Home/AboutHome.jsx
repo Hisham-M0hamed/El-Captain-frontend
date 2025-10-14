@@ -1,6 +1,7 @@
 import { Box, Container, Paper } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 
 const AboutHome = () => {
   return (
@@ -30,6 +31,7 @@ const AboutHome = () => {
           }}
         >
           <h1 style={{ fontSize: "40px" }}>شريكك اللوجستي الموثوق</h1>
+          <DecorativeLine />
           {/* <hr
             style={{
               width: "100px",

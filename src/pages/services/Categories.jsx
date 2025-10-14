@@ -2,14 +2,15 @@ import { Box, Container, Divider, Typography } from "@mui/material";
 import React from "react";
 import CardAll from "./Card";
 import CardShip from "./CardShip";
+import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 
 const Categories = () => {
   return (
     <Container sx={{ marginTop: "88px" }}>
       <Box>
-        <Typography variant="h2">المنتجات المتاحة</Typography>
+        <Typography variant="h2">منتجاتنا</Typography>
         {/* <hr sx={{ width: "10px", height: "3px" }} /> */}
-        <hr
+        {/* <hr
           style={{
             width: "100px",
             height: "px",
@@ -18,7 +19,9 @@ const Categories = () => {
             borderColor: "#f0a30b",
             margin: "24px 10px",
           }}
-        />
+        /> */}
+        <DecorativeLine />
+
         <Box
           sx={{
             display: "flex",
@@ -30,8 +33,8 @@ const Categories = () => {
       </Box>
 
       <Box>
-        <Typography variant="h2"> الخيارات المتاحة للشحن </Typography>
-        <hr
+        <Typography variant="h2">خدمات الشحن والتوصيل</Typography>
+        {/* <hr
           style={{
             width: "100px",
             height: "px",
@@ -40,7 +43,8 @@ const Categories = () => {
             borderColor: "#f0a30b",
             margin: "24px 10px",
           }}
-        />
+        /> */}
+        <DecorativeLine />
         <Box
           sx={{
             // marginTop: "40px",
