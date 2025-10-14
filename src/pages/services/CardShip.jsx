@@ -49,23 +49,40 @@ const CardShip = () => {
           },
         ].map((item, idx) => {
           return (
-            <Box>
-              <Link to={"/build"}>
+            <Box
+              key={idx}
+              sx={{
+                flex: {
+                  xs: "1 1 100%", // 1 per row on xs/sm
+                  sm: "1 1 100%", // 1 per row on sm
+                  md: "1 1 45%", // 2 per row on md
+                  lg: "1 1 22%", // 4 per row on lg
+                },
+                maxWidth: {
+                  xs: "100%",
+                  sm: "100%",
+                  md: "260px",
+                  lg: "270px",
+                },
+                minWidth: "220px",
+                margin: "16px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Link to={"/build"} style={{ textDecoration: "none" }}>
                 <Card
                   elevation={0}
                   className="card"
-                  key={idx}
                   sx={{
                     position: "relative",
-                    textAlign: "center",
+                    // textAlign: "center",
                     display: "flex",
-                    gap: "20px",
-                    margin: "16px 16px",
                     flexDirection: "column",
-                    alignItems: "center",
+                    // alignItems: "center",
                     borderRadius: "12px",
-                    width: "320px",
-                    height: "280px",
+                    width: "100%",
+                    height: "300px",
                     border: "1px solid #e0dbdbff",
                     "&:hover": {
                       transform: "translateY(-10px)",
@@ -76,17 +93,21 @@ const CardShip = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      height="200"
+                      height="220"
                       image={item.image}
-                      width="320px"
-                      // sx={{ objectFit: "cover", width: "320px" }}
+                      sx={{
+                        objectFit: "cover",
+                        width: "260px",
+                        maxHeight: "220px",
+                        borderRadius: "12px 12px 0 0",
+                      }}
                     />
                     <CardContent>
                       <Typography
                         sx={{ color: "#0c1b33" }}
                         gutterBottom
                         variant="h5"
-                        fontSize={25}
+                        fontSize={20}
                         component="div"
                       >
                         <Paper
@@ -101,35 +122,9 @@ const CardShip = () => {
                           <Paper elevation={0}>{item.more}</Paper>
                         </Paper>
                       </Typography>
-                      {/* <Typography variant="h6" sx={{ color: "text.secondary" }}>
-                                      {item.desc}
-                                    </Typography> */}
                     </CardContent>
                   </CardActionArea>
-                  <CardActions>
-                    {/* <Button
-                                    className="button"
-                                    sx={{
-                                      textAlign: "center",
-                                      backgroundColor: "#0c1b33",
-                                      padding: "4px 20px",
-                                      color: "#f6f6f6",
-                                      borderRadius: "20px",
-                                      ":hover": { bgcolor: "#f0a30b" },
-                                      position: "absolute",
-                                      // margin: "15px 15px",
-                                      bottom: "20px",
-                                      width: "100px",
-                                      left: "50%",
-                                      transform: "translate(-50%)",
-                                      fontSize: "22px",
-                                    }}
-                                    // size="large"
-                                    // color="primary"
-                                  >
-                                    {item.more}
-                                  </Button> */}
-                  </CardActions>
+                  <CardActions />
                 </Card>
               </Link>
             </Box>

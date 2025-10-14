@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <Container sx={{ marginTop: "88px" }}>
       <Box>
-        <Typography variant="h2">المنتجات المتاحة</Typography>
+        <Typography variant="h2">منتجاتنا</Typography>
         {/* <hr sx={{ width: "10px", height: "3px" }} /> */}
         {/* <hr
           style={{
@@ -33,7 +33,7 @@ const Categories = () => {
       </Box>
 
       <Box>
-        <Typography variant="h2"> الخيارات المتاحة للشحن </Typography>
+        <Typography variant="h2">خدمات الشحن والتوصيل</Typography>
         {/* <hr
           style={{
             width: "100px",
