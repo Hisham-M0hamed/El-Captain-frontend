@@ -13,16 +13,15 @@ const PartnerHome = () => {
             color: "#333",
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-start", 
-            textAlign: "right",             }}
+            alignItems: "flex-start",
+            textAlign: "right",
+          }}
         >
           <h1 style={{ fontSize: "40px" }}> شركاء النجاح</h1>
           <hr
             style={{
               width: "100px",
-              height: "px",
               color: "#f0a30b",
-              bgcolor: "#f0a30b",
               borderColor: "#f0a30b",
               margin: "24px 4px",
             }}
@@ -30,42 +29,63 @@ const PartnerHome = () => {
           <p
             style={{
               fontSize: "18px",
-              alignItems: "flex-start", 
-              textAlign: "right",  
-              width: "830px", 
+              textAlign: "right",
               margin: "18px 4px",
             }}
           >
             مهمتنا هي بناء شراكات طويلة الأمد مبنية على الثقة والشفافية. نفخر
             بكوننا جزءًا من قصة نجاح العديد من الشركات الرائدة في مصر.
           </p>
-          <div
-            className="partner-grid"
-            // style={{
-            //   display: "flex",
-            //   justifyContent: "space-between",
-            //   gap: "30px",
-            //   textAlign: "center",
-            //   alignItems: "center",
-            //   alignContent: "center",
-            //   flexWrap: "wrap",
-            // }}
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: {
+                xs: "1fr",
+                md: "repeat(2, 1fr)",
+                lg: "repeat(3, 1fr)",
+              },
+              gap: 2,
+              justifyItems: "center",
+              alignItems: "center",
+              width: "100%",
+              mb: 3,
+            }}
           >
-            <div className="partner-card">
-              <img src="public\images\arab.png" alt="Nike" />
-            </div>
-
-            <div className="partner-card">
-              <img src="public\images\orascom.png" alt="Orascom" />
-            </div>
-            <div className="partner-card">
-              <img src="public\images\elswedy.png" alt="Google" />
-            </div>
-          </div>
+            <Box
+              className="partner-card"
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
+              <img
+                src="public/images/arab.png"
+                alt="Nike"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </Box>
+            <Box
+              className="partner-card"
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
+              <img
+                src="public/images/orascom.png"
+                alt="Orascom"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </Box>
+            <Box
+              className="partner-card"
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
+              <img
+                src="public/images/elswedy.png"
+                alt="Google"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </Box>
+          </Box>
           <Link to="/partner" className="cta-button">
             شاهد جميع الشركاء
           </Link>
-        </Paper>{" "}
+        </Paper>
       </Container>
     </Box>
   );
