@@ -13,8 +13,8 @@ const PartnerHome = () => {
             color: "#333",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-          }}
+            alignItems: "flex-start", 
+            textAlign: "right",             }}
         >
           <h1 style={{ fontSize: "40px" }}> شركاء النجاح</h1>
           <hr
@@ -30,7 +30,9 @@ const PartnerHome = () => {
           <p
             style={{
               fontSize: "18px",
-              textAlign: "center",
+              alignItems: "flex-start", 
+              textAlign: "right",  
+              width: "830px", 
               margin: "18px 4px",
             }}
           >

@@ -13,7 +13,8 @@ const ContactHome = () => {
             color: "#f6f6f6",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+             alignItems: "flex-start", 
+            textAlign: "right",   
           }}
         >
           <h1 style={{ fontSize: "40px" }}>لنبدأ العمل معاً</h1>
@@ -30,7 +31,9 @@ const ContactHome = () => {
           <p
             style={{
               fontSize: "18px",
-              textAlign: "center",
+              alignItems: "flex-start", 
+              textAlign: "right",   
+              width: "830px",
               margin: "18px 4px",
             }}
           >

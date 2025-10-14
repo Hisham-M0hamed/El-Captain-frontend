@@ -1,54 +1,53 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { useNavigate, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const [phoneNumbers, setPhoneNumbers] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
 
-  const navigate = useNavigate();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(" Phone Number:", phoneNumbers);
+  //   console.log(" Password:", password);
+
+  //   fetch("/api/v1/users/login", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({ phoneNumbers: phoneNumbers, password }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data))
+  //     .catch((err) => console.error(err));
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!phoneNumbers || !password) {
-      setError("يرجى إدخال رقم الهاتف وكلمة المرور");
-      return;
-    }
+    console.log("Phone Number:", phoneNumbers);
+    console.log("Password:", password);
 
     try {
-      setLoading(true);
-      setError("");
-      setSuccess("");
-
-      const res = await fetch("api/v1/users/login", {
+      const res = await fetch("/api/v1/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phoneNumbers, password }),
       });
 
       const data = await res.json();
+      console.log("Response:", data);
 
-      if (res.ok) {
-        // حفظ التوكن وبيانات المستخدم
-        localStorage.setItem("token", data.token);
-        localStorage.setItem("user", JSON.stringify(data.data.user));
-
-        setSuccess("تم تسجيل الدخول بنجاح ✅");
-        setTimeout(() => navigate("/home"), 1500);
+      if (res.ok && (data.token || data.status === "success")) {
+        // alert("✅ تم تسجيل الدخول بنجاح!");
+        window.location.href = "/home";
       } else {
-        setError(data.message || "بيانات الدخول غير صحيحة");
+        alert(data.message || "❌ فشل تسجيل الدخول، تحقق من البيانات.");
       }
-    } catch (err) {
-      console.error("Login Error:", err);
-      setError("فشل الاتصال بالسيرفر");
-    } finally {
-      setLoading(false);
+    } catch (error) {
+      console.error("Error during login:", error);
+      // alert("حدث خطأ أثناء الاتصال بالسيرفر.");
     }
   };
+
 
   return (
     <div className="auth-container">
@@ -60,10 +59,6 @@ const Login = () => {
 
         <div className="auth-form">
           <h1>مرحباً بعودتك</h1>
-
-          {error && <div className="alert error">{error}</div>}
-          {success && <div className="alert success">{success}</div>}
-
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input
@@ -74,7 +69,6 @@ const Login = () => {
                 required
               />
             </div>
-
             <div className="form-group">
               <input
                 type="password"
@@ -84,9 +78,8 @@ const Login = () => {
                 required
               />
             </div>
-
-            <button type="submit" className="submit-btn" disabled={loading}>
-              {loading ? "جاري تسجيل الدخول..." : "تسجيل الدخول"}
+            <button type="submit" className="submit-btn">
+              تسجيل الدخول
             </button>
           </form>
 
@@ -101,6 +94,9 @@ const Login = () => {
             <p>
               ليس لديك حساب؟ <Link to="/Register">إنشاء حساب جديد</Link>
             </p>
+            {/* <p>
+              <a href="/">العودة للرئيسية</a>
+            </p> */}
           </div>
         </div>
       </div>
