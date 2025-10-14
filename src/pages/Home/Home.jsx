@@ -10,11 +10,14 @@ import AboutHome from "./AboutHome";
 import PartnerHome from "./PartnerHome";
 import ContactHome from "./ContactHome";
 import QA from "./QA";
+import Slick from "./slick";
 
 const Home = () => {
   return (
     <Box>
       <Hero />
+     <Slick />
+
       <Categories />
       <WhatsAppButton />
       <AboutHome />
