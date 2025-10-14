@@ -19,7 +19,6 @@ const ContactHome = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            // textAlign: "right",
             margin: "0",
           }}
         >
@@ -32,7 +31,6 @@ const ContactHome = () => {
               fontSize: "18px",
               alignItems: "flex-start",
               textAlign: "right",
-              // width: "830px",
               margin: "8px 4px",
             }}
           >
