@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 const ContactHome = () => {
   return (
-    <Box sx={{ bgcolor: "#0c1b33", margin: "40px 0" }}>
+    <Box
+      sx={{
+        background: "linear-gradient(to left, #0C1B33, #435778)",
+        margin: "40px 0",
+      }}
+    >
       <Container sx={{ padding: "40px" }}>
         <Paper
           elevation={0}
@@ -13,8 +18,9 @@ const ContactHome = () => {
             color: "#f6f6f6",
             display: "flex",
             flexDirection: "column",
-             alignItems: "flex-start", 
-            textAlign: "right",   
+            alignItems: "flex-start",
+            // textAlign: "right",
+            margin: "0",
           }}
         >
           <h1 style={{ fontSize: "40px" }}>لنبدأ العمل معاً</h1>
@@ -29,13 +35,14 @@ const ContactHome = () => {
             }}
           />
           <DecorativeLine />
+
           <p
             style={{
               fontSize: "18px",
-              alignItems: "flex-start", 
-              textAlign: "right",   
-              width: "830px",
-              margin: "18px 4px",
+              alignItems: "flex-start",
+              textAlign: "right",
+              // width: "830px",
+              margin: "8px 4px",
             }}
           >
             تواصل معنا اليوم لمناقشة احتياجاتك اللوجستية والحصول على عرض سعر

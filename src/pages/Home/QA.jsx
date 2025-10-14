@@ -18,7 +18,7 @@ const QA = () => {
             color: "#333",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            // alignItems: "center",
           }}
         >
           <h1 style={{ fontSize: "40px" }}> الأسئلة الشائعة</h1>

@@ -41,6 +41,12 @@ const CardShip = () => {
             desc: "الحل الأمثل للشحنات العاجلة وذات الأهمية القصوى، مع ضمان السرعة والكفاءة في التوصيل.",
             more: <ArrowBackIosNewIcon />,
           },
+          {
+            image: "/images/post.png",
+            text: " البريد السريع",
+            desc: "خدمة البريد السريع لتلبية احتياجاتكم من التوصيل السريع والموثوق داخل وخارج البلاد.",
+            more: <ArrowBackIosNewIcon />,
+          },
         ].map((item, idx) => {
           return (
             <Box>
