@@ -24,16 +24,7 @@ const ContactHome = () => {
           }}
         >
           <h1 style={{ fontSize: "40px" }}>لنبدأ العمل معاً</h1>
-          {/* <hr
-            style={{
-              width: "100px",
-              height: "px",
-              color: "#f0a30b",
-              bgcolor: "#f0a30b",
-              borderColor: "#f0a30b",
-              margin: "24px 4px",
-            }}
-          /> */}
+
           <DecorativeLine />
 
           <p
@@ -48,7 +39,11 @@ const ContactHome = () => {
             تواصل معنا اليوم لمناقشة احتياجاتك اللوجستية والحصول على عرض سعر
             مخصص.
           </p>
-          <Link to="/about" className="cta-button">
+          <Link
+            style={{ color: "#f6f6f6", borderRadius: "10px" }}
+            to="/about"
+            className="cta-button"
+          >
             تواصل معنا الان
           </Link>
         </Paper>

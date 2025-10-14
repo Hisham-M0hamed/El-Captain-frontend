@@ -2,11 +2,13 @@ import React from "react";
 import styles from "./Footer.module.css";
 import {
   Box,
+  Button,
   Container,
   Stack,
   Typography,
   useMediaQuery,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Box
@@ -69,7 +71,9 @@ const Footer = () => {
               <p style={{ fontSize: "20px", marginTop: "30px" }}>
                 لجميع خدمات الشحن برا وبحرا وجوا
               </p>
-              <button>انضم الينا</button>
+              <Link to="/contact">
+                <Button>انضم الينا</Button>
+              </Link>
             </div>
           </div>
           <div

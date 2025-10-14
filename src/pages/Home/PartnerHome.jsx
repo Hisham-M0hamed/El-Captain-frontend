@@ -85,7 +85,11 @@ const PartnerHome = () => {
               />
             </Box>
           </Box>
-          <Link to="/partner" className="cta-button">
+          <Link
+            style={{ color: "#f6f6f6", borderRadius: "10px" }}
+            to="/partner"
+            className="cta-button"
+          >
             شاهد جميع الشركاء
           </Link>
         </Paper>

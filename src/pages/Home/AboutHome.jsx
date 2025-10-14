@@ -9,13 +9,13 @@ const AboutHome = () => {
       sx={{
         background: "linear-gradient(to left, #0C1B33, #435778)",
         margin: "40px 0",
-        height: "380px",
+        height: "410px",
         position: "relative",
       }}
     >
       <Container
         sx={{
-          padding: "40px",
+          padding: "40px 0",
         }}
       >
         <Paper
@@ -27,7 +27,7 @@ const AboutHome = () => {
             flexDirection: "column",
             alignItems: "flex-start",
             // textAlign: "right",
-            margin: "42px",
+            margin: "42px 0",
           }}
         >
           <h1 style={{ fontSize: "40px" }}>شريكك اللوجستي الموثوق</h1>
