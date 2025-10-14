@@ -5,7 +5,7 @@ import CardShip from "./CardShip";
 
 const Categories = () => {
   return (
-    <Container sx={{ marginTop: "88px", textAlign: "center" }}>
+    <Container sx={{ marginTop: "88px" }}>
       <Box>
         <Typography variant="h2">المنتجات المتاحة</Typography>
         {/* <hr sx={{ width: "10px", height: "3px" }} /> */}
@@ -16,7 +16,7 @@ const Categories = () => {
             color: "#f0a30b",
             bgcolor: "#f0a30b",
             borderColor: "#f0a30b",
-            margin: "24px auto",
+            margin: "24px 10px",
           }}
         />
         <Box
@@ -38,7 +38,7 @@ const Categories = () => {
             color: "#f0a30b",
             bgcolor: "#f0a30b",
             borderColor: "#f0a30b",
-            margin: "24px auto",
+            margin: "24px 10px",
           }}
         />
         <Box
