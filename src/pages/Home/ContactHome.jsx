@@ -1,7 +1,7 @@
 import { Box, Container, Paper } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import DecorativeLine from "../../components/common/DecorativeLine/DecorativeLine";
 const ContactHome = () => {
   return (
     <Box sx={{ bgcolor: "#0c1b33", margin: "40px 0" }}>
@@ -28,6 +28,7 @@ const ContactHome = () => {
               margin: "24px 4px",
             }}
           />
+          <DecorativeLine />
           <p
             style={{
               fontSize: "18px",
