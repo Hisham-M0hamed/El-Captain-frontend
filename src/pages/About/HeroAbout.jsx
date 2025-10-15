@@ -12,7 +12,7 @@ import {
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
-import "./about.css";
+import "./About.css";
 import { Link } from "react-router-dom";
 const HeroAbout = () => {
   return (
