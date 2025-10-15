@@ -33,7 +33,7 @@ const Register = () => {
       setError("");
       setSuccess("");
 
-      const res = await fetch("http://localhost:8000/api/v1/users/signup", {
+      const res = await fetch("/api/v1/users/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
