@@ -11,7 +11,7 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 import WhatsAppButton from "../WhatsAppButton";
-import HeroAbout from "./heroAbout";
+import HeroAbout from "./HeroAbout";
 
 const About = () => {
   useEffect(() => {
