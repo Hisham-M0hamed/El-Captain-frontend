@@ -29,7 +29,7 @@ const Navbarlg = () => {
       >
         {[
           { link: "home", text: "الصفحة الرئيسية" },
-          { link: "services", text: "خدمتنا" },
+          // { link: "services", text: "خدمتنا" },
           { link: "about", text: "من نحن" },
           { link: "partner", text: "شركائنا" },
           { link: "contact", text: "اتصل بنا" },

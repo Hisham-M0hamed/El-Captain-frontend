@@ -17,6 +17,16 @@ import { Link } from "react-router-dom";
 const HeroAbout = () => {
   return (
     <Box className="image-container">
+      <img
+        style={{
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          width: "100%",
+          height: "750px",
+        }}
+        src="./images/heroabout.jpg"
+      />
+      <div className="overlay"></div>
       <Container>
         <Box
           className="home"

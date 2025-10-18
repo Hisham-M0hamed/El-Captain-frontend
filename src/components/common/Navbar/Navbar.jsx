@@ -177,7 +177,7 @@ const Navbar = () => {
             </IconButton>
             {[
               { link: "home", mainText: "الصفحة الرئيسية" },
-              { link: "services", mainText: " خدمتنا" },
+              // { link: "services", mainText: " خدمتنا" },
               { link: "about", mainText: "من نحن " },
               { link: "partner", mainText: "شركائنا" },
               { link: "contact", mainText: "اتصل بنا" },
